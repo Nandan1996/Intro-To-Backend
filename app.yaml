@@ -1,0 +1,16 @@
+application: nands-cs253
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /css
+  static_dir: css
+
+- url: /.*
+  script: cs253.app
+
+libraries:
+- name: jinja2
+  version: latest
